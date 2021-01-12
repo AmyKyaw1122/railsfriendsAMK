@@ -1,0 +1,2 @@
+module FriendsDbsHelper
+end

@@ -1,0 +1,18 @@
+
+<div class="jumbotron" style="background-color: #B6B4C2">
+  <h3 class="display-4">
+    <%= @friends_db.first_name %>
+     <%= @friends_db.last_name %>
+  </h3>
+  <p class="lead">
+     <%= @friends_db.email %> |
+     <%= @friends_db.phone %> |
+      <%= @friends_db.twitter %>
+  </p><br/>
+  
+  <%= link_to 'Edit', edit_friends_db_path(@friends_db),class:"btn btn-secondary" %> 
+
+  <%= link_to 'Delete', @friends_db, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %> 
+  
+  <%= link_to 'Back', friends_dbs_path,class:"btn btn-secondary" %>
+</div>
